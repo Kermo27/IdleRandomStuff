@@ -9,28 +9,25 @@
 
 [sub_resource type="StyleBoxFlat" id=1]
 
-[sub_resource type="StyleBoxFlat" id=10]
+[sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.870588, 0.486275, 0.737255, 1 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=3]
 size = 51
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 4 )
 
-[sub_resource type="StyleBoxFlat" id=3]
+[sub_resource type="StyleBoxFlat" id=4]
 bg_color = Color( 0.709804, 0.384314, 0.596078, 1 )
 
-[sub_resource type="StyleBoxFlat" id=4]
+[sub_resource type="StyleBoxFlat" id=5]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=6]
 size = 31
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 4 )
-
-[sub_resource type="StyleBoxFlat" id=6]
-bg_color = Color( 0.709804, 0.384314, 0.596078, 1 )
 
 [sub_resource type="StyleBoxFlat" id=7]
 bg_color = Color( 0.709804, 0.384314, 0.596078, 1 )
@@ -39,6 +36,9 @@ bg_color = Color( 0.709804, 0.384314, 0.596078, 1 )
 bg_color = Color( 0.709804, 0.384314, 0.596078, 1 )
 
 [sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.709804, 0.384314, 0.596078, 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
 bg_color = Color( 0.709804, 0.384314, 0.596078, 1 )
 
 [sub_resource type="StyleBoxFlat" id=11]
@@ -471,7 +471,7 @@ __meta__ = {
 [node name="Panel" type="Panel" parent="StorePanel"]
 margin_right = 1024.0
 margin_bottom = 600.0
-custom_styles/panel = SubResource( 10 )
+custom_styles/panel = SubResource( 2 )
 script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -482,7 +482,7 @@ margin_left = 627.0
 margin_top = 41.0
 margin_right = 954.0
 margin_bottom = 102.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = "Nazwa gry"
 align = 1
 valign = 1
@@ -500,9 +500,9 @@ margin_left = 712.0
 margin_top = 194.0
 margin_right = 877.0
 margin_bottom = 231.0
-custom_styles/hover = SubResource( 3 )
-custom_styles/normal = SubResource( 4 )
-custom_fonts/font = SubResource( 5 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 text = "Start"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -513,9 +513,9 @@ margin_left = 715.0
 margin_top = 242.0
 margin_right = 880.0
 margin_bottom = 279.0
-custom_styles/hover = SubResource( 6 )
-custom_styles/normal = SubResource( 4 )
-custom_fonts/font = SubResource( 5 )
+custom_styles/hover = SubResource( 7 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 text = "Ulepszenia"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -526,9 +526,9 @@ margin_left = 717.0
 margin_top = 301.0
 margin_right = 882.0
 margin_bottom = 338.0
-custom_styles/hover = SubResource( 7 )
-custom_styles/normal = SubResource( 4 )
-custom_fonts/font = SubResource( 5 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 text = "Postacie"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -539,9 +539,9 @@ margin_left = 714.0
 margin_top = 353.0
 margin_right = 879.0
 margin_bottom = 390.0
-custom_styles/hover = SubResource( 8 )
-custom_styles/normal = SubResource( 4 )
-custom_fonts/font = SubResource( 5 )
+custom_styles/hover = SubResource( 9 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 text = "Dodatki"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -552,9 +552,9 @@ margin_left = 712.0
 margin_top = 415.0
 margin_right = 877.0
 margin_bottom = 452.0
-custom_styles/hover = SubResource( 9 )
-custom_styles/normal = SubResource( 4 )
-custom_fonts/font = SubResource( 5 )
+custom_styles/hover = SubResource( 10 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 text = "Wyjście"
 __meta__ = {
 "_edit_use_anchors_": false
