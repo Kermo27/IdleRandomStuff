@@ -163,12 +163,6 @@ func _on_SaveButton_pressed():
 	get_tree().change_scene("res://Scenes/MainMenu.tscn")
 
 
-func _on_SettingsButton_pressed():
-	if $SettingsPanel.visible == true:
-		$SettingsPanel.visible = false
-	else:
-		$SettingsPanel.visible = true
-		
 func round_to_dec(num, digit):
 	return round(num * pow(10.0, digit)) / pow(10.0, digit)
 
