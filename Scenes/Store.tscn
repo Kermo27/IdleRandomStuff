@@ -1,0 +1,494 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Pictures/test.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Store.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/TextureMenuButton.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.364706, 0.223529, 0.223529, 1 )
+
+[node name="Panel" type="Panel" groups=[
+"Persist",
+]]
+margin_right = 1024.0
+margin_bottom = 600.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GoldLabel" type="Label" parent="."]
+margin_left = 3.59999
+margin_top = 4.30001
+margin_right = 117.6
+margin_bottom = 53.3
+custom_colors/font_color = Color( 0.894118, 0.964706, 0.027451, 1 )
+text = "[money]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClickButton" type="TextureButton" parent="."]
+margin_left = 275.0
+margin_top = 43.0
+margin_right = 781.0
+margin_bottom = 518.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BuyButton" type="Button" parent="."]
+margin_left = 3.0
+margin_top = 514.0
+margin_right = 92.0
+margin_bottom = 555.0
+text = "Sklep"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuitButton" type="Button" parent="."]
+margin_left = 1.0
+margin_top = 560.0
+margin_right = 93.0
+margin_bottom = 597.0
+text = "Cofnij"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SettingsButton" type="Button" parent="."]
+margin_left = 98.0
+margin_top = 560.0
+margin_right = 190.0
+margin_bottom = 597.0
+text = "Ustawienia"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StoreCount" type="Label" parent="."]
+margin_left = 18.3
+margin_top = 40.1
+margin_right = 58.3
+margin_bottom = 54.1
+text = "[0]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StorePanel" type="Panel" parent="."]
+visible = false
+margin_left = 100.0
+margin_right = 1024.0
+margin_bottom = 550.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusOneButton" type="Button" parent="StorePanel"]
+margin_left = 16.95
+margin_top = 46.35
+margin_right = 114.95
+margin_bottom = 89.35
+text = "+0.1"
+
+[node name="PlusOnePriceLabel" type="Label" parent="StorePanel"]
+margin_left = 15.0
+margin_top = 92.0
+margin_right = 110.0
+margin_bottom = 106.0
+text = "[price]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusOneLevelLabel" type="Label" parent="StorePanel"]
+margin_left = 17.0
+margin_top = 23.0
+margin_right = 112.0
+margin_bottom = 37.0
+text = "[level]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusTwoButton" type="Button" parent="StorePanel"]
+margin_left = 132.95
+margin_top = 45.35
+margin_right = 230.95
+margin_bottom = 88.35
+text = "+0.5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusTwoPriceLabel" type="Label" parent="StorePanel"]
+margin_left = 136.0
+margin_top = 93.0
+margin_right = 231.0
+margin_bottom = 107.0
+text = "[price]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusTwoLevelLabel" type="Label" parent="StorePanel"]
+margin_left = 132.0
+margin_top = 23.0
+margin_right = 227.0
+margin_bottom = 37.0
+text = "[level]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusThreeButton" type="Button" parent="StorePanel"]
+margin_left = 248.95
+margin_top = 44.35
+margin_right = 346.95
+margin_bottom = 87.35
+text = "+4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusThreePriceLabel" type="Label" parent="StorePanel"]
+margin_left = 252.0
+margin_top = 93.0
+margin_right = 347.0
+margin_bottom = 107.0
+text = "[price]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusThreeLevelLabel" type="Label" parent="StorePanel"]
+margin_left = 247.0
+margin_top = 23.0
+margin_right = 342.0
+margin_bottom = 37.0
+text = "[level]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusFourButton" type="Button" parent="StorePanel"]
+margin_left = 358.95
+margin_top = 43.35
+margin_right = 456.95
+margin_bottom = 86.35
+text = "+10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusFourPriceLabel" type="Label" parent="StorePanel"]
+margin_left = 363.0
+margin_top = 91.0
+margin_right = 458.0
+margin_bottom = 105.0
+text = "[price]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusFourLevelLabel" type="Label" parent="StorePanel"]
+margin_left = 361.0
+margin_top = 23.0
+margin_right = 456.0
+margin_bottom = 37.0
+text = "[level]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusFiveButton" type="Button" parent="StorePanel"]
+margin_left = 465.95
+margin_top = 42.35
+margin_right = 563.95
+margin_bottom = 85.35
+text = "+40"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusFivePriceLabel" type="Label" parent="StorePanel"]
+margin_left = 468.0
+margin_top = 90.0
+margin_right = 563.0
+margin_bottom = 104.0
+text = "[price]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusFiveLevelLabel" type="Label" parent="StorePanel"]
+margin_left = 467.0
+margin_top = 21.0
+margin_right = 562.0
+margin_bottom = 35.0
+text = "[level]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusSixButton" type="Button" parent="StorePanel"]
+margin_left = 19.95
+margin_top = 144.35
+margin_right = 117.95
+margin_bottom = 187.35
+text = "+40"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusSixPriceLabel" type="Label" parent="StorePanel"]
+margin_left = 21.0
+margin_top = 197.0
+margin_right = 116.0
+margin_bottom = 211.0
+text = "[price]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusSixLevelLabel" type="Label" parent="StorePanel"]
+margin_left = 21.0
+margin_top = 126.0
+margin_right = 116.0
+margin_bottom = 140.0
+text = "[level]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusSevenButton" type="Button" parent="StorePanel"]
+margin_left = 139.95
+margin_top = 141.35
+margin_right = 237.95
+margin_bottom = 184.35
+text = "+40"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusSevenPriceLabel" type="Label" parent="StorePanel"]
+margin_left = 144.0
+margin_top = 193.0
+margin_right = 239.0
+margin_bottom = 207.0
+text = "[price]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusSevenLevelLabel" type="Label" parent="StorePanel"]
+margin_left = 144.0
+margin_top = 124.0
+margin_right = 239.0
+margin_bottom = 138.0
+text = "[level]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusEightButton" type="Button" parent="StorePanel"]
+margin_left = 255.95
+margin_top = 140.35
+margin_right = 353.95
+margin_bottom = 183.35
+text = "+40"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusEightPriceLabel" type="Label" parent="StorePanel"]
+margin_left = 259.0
+margin_top = 189.0
+margin_right = 354.0
+margin_bottom = 203.0
+text = "[price]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusEightLevelLabel" type="Label" parent="StorePanel"]
+margin_left = 259.0
+margin_top = 123.0
+margin_right = 354.0
+margin_bottom = 137.0
+text = "[level]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusNineButton" type="Button" parent="StorePanel"]
+margin_left = 364.95
+margin_top = 140.35
+margin_right = 462.95
+margin_bottom = 183.35
+text = "+40"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusNinePriceLabel" type="Label" parent="StorePanel"]
+margin_left = 366.0
+margin_top = 189.0
+margin_right = 461.0
+margin_bottom = 203.0
+text = "[price]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusNineLevelLabel" type="Label" parent="StorePanel"]
+margin_left = 369.0
+margin_top = 122.0
+margin_right = 464.0
+margin_bottom = 136.0
+text = "[level]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusTenButton" type="Button" parent="StorePanel"]
+margin_left = 472.95
+margin_top = 141.35
+margin_right = 570.95
+margin_bottom = 184.35
+text = "+40"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusTenPriceLabel" type="Label" parent="StorePanel"]
+margin_left = 476.0
+margin_top = 188.0
+margin_right = 571.0
+margin_bottom = 202.0
+text = "[price]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusTenLevelLabel" type="Label" parent="StorePanel"]
+margin_left = 472.0
+margin_top = 123.0
+margin_right = 567.0
+margin_bottom = 137.0
+text = "[level]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusElevenButton" type="Button" parent="StorePanel"]
+margin_left = 169.95
+margin_top = 261.35
+margin_right = 267.95
+margin_bottom = 304.35
+text = "+40"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusElevenPriceLabel" type="Label" parent="StorePanel"]
+margin_left = 170.0
+margin_top = 307.0
+margin_right = 265.0
+margin_bottom = 321.0
+text = "[price]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlusElevenLevelLabel" type="Label" parent="StorePanel"]
+margin_left = 169.0
+margin_top = 242.0
+margin_right = 264.0
+margin_bottom = 256.0
+text = "[level]"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SettingsPanel" type="Panel" parent="."]
+visible = false
+margin_left = 100.0
+margin_right = 1024.0
+margin_bottom = 550.0
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureMenuButton" type="MenuButton" parent="SettingsPanel"]
+margin_left = 43.0
+margin_top = 36.0
+margin_right = 198.0
+margin_bottom = 131.0
+text = "Tekstura"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureLook" type="Sprite" parent="SettingsPanel"]
+position = Vector2( 608, 241 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="SettingsPanel"]
+margin_left = 499.0
+margin_top = 51.0
+margin_right = 708.0
+margin_bottom = 78.0
+text = "Podglad"
+align = 1
+valign = 1
+[connection signal="pressed" from="ClickButton" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="BuyButton" to="." method="_on_BuyButton_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_SaveButton_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_SettingsButton_pressed"]
+[connection signal="pressed" from="StorePanel/PlusOneButton" to="." method="_on_PlusOneButton_pressed"]
+[connection signal="pressed" from="StorePanel/PlusTwoButton" to="." method="_on_PlusTwoButton_pressed"]
+[connection signal="pressed" from="StorePanel/PlusThreeButton" to="." method="_on_PlusThreeButton_pressed"]
+[connection signal="pressed" from="StorePanel/PlusFourButton" to="." method="_on_PlusFourButton_pressed"]
+[connection signal="pressed" from="StorePanel/PlusFiveButton" to="." method="_on_PlusFiveButton_pressed"]
+[connection signal="pressed" from="StorePanel/PlusSixButton" to="." method="_on_PlusSixButton_pressed"]
+[connection signal="pressed" from="StorePanel/PlusSevenButton" to="." method="_on_PlusSevenButton_pressed"]
+[connection signal="pressed" from="StorePanel/PlusEightButton" to="." method="_on_PlusEightButton_pressed"]
+[connection signal="pressed" from="StorePanel/PlusNineButton" to="." method="_on_PlusNineButton_pressed"]
+[connection signal="pressed" from="StorePanel/PlusTenButton" to="." method="_on_PlusTenButton_pressed"]
+[connection signal="pressed" from="StorePanel/PlusElevenButton" to="." method="_on_PlusElevenButton_pressed"]
