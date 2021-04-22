@@ -49,28 +49,6 @@ func _ready():
 func UpdateUI():
 	$GoldLabel.text = str(round_to_dec(gold, 2)) + "g"
 	$StoreCount.text = str(round_to_dec(storeCount, 2))
-	$StorePanel/PlusOneLevelLabel.text = str(round_to_dec(plusOneLevel, 2))
-	$StorePanel/PlusOnePriceLabel.text = str(round_to_dec(plusOnePrice, 2))+"g"
-	$StorePanel/PlusTwoLevelLabel.text = str(round_to_dec(plusTwoLevel, 2))
-	$StorePanel/PlusTwoPriceLabel.text = str(round_to_dec(plusTwoPrice, 2))+"g"
-	$StorePanel/PlusThreeLevelLabel.text = str(round_to_dec(plusThreeLevel, 2))
-	$StorePanel/PlusThreePriceLabel.text = str(round_to_dec(plusThreePrice, 2))+"g"
-	$StorePanel/PlusFourLevelLabel.text = str(round_to_dec(plusFourLevel, 2))
-	$StorePanel/PlusFourPriceLabel.text = str(round_to_dec(plusFourPrice, 2))+"g"
-	$StorePanel/PlusFiveLevelLabel.text = str(round_to_dec(plusFiveLevel, 2))
-	$StorePanel/PlusFivePriceLabel.text = str(round_to_dec(plusFivePrice, 2))+"g"
-	$StorePanel/PlusSixLevelLabel.text = str(round_to_dec(plusSixLevel, 2))
-	$StorePanel/PlusSixPriceLabel.text = str(round_to_dec(plusSixPrice, 2))+"g"
-	$StorePanel/PlusSevenLevelLabel.text = str(round_to_dec(plusSevenLevel, 2))
-	$StorePanel/PlusSevenPriceLabel.text = str(round_to_dec(plusSevenPrice, 2))+"g"
-	$StorePanel/PlusEightLevelLabel.text = str(round_to_dec(plusEightLevel, 2))
-	$StorePanel/PlusEightPriceLabel.text = str(round_to_dec(plusEightPrice, 2))+"g"
-	$StorePanel/PlusNineLevelLabel.text = str(round_to_dec(plusNineLevel, 2))
-	$StorePanel/PlusNinePriceLabel.text = str(round_to_dec(plusNinePrice, 2))+"g"
-	$StorePanel/PlusTenLevelLabel.text = str(round_to_dec(plusTenLevel, 2))
-	$StorePanel/PlusTenPriceLabel.text = str(round_to_dec(plusTenPrice, 2))+"g"
-	$StorePanel/PlusElevenLevelLabel.text = str(round_to_dec(plusElevenLevel, 2))
-	$StorePanel/PlusElevenPriceLabel.text = str(round_to_dec(plusElevenPrice, 2))+"g"
 
 
 func _on_Button_pressed():
