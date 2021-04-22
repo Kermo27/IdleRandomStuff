@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chiaki.png-a4777f56d22ff7fe8eb1eb83665afff0.stex"
+path="res://.import/Sayaka.png-db3d59ea46fdc993a8230319af9e2e81.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pictures/Chiaki.png"
-dest_files=[ "res://.import/Chiaki.png-a4777f56d22ff7fe8eb1eb83665afff0.stex" ]
+source_file="res://Pictures/Sayaka.png"
+dest_files=[ "res://.import/Sayaka.png-db3d59ea46fdc993a8230319af9e2e81.stex" ]
 
 [params]
 
