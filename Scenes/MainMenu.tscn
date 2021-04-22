@@ -45,10 +45,10 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="."]
-margin_left = 431.327
-margin_top = 26.9437
-margin_right = 941.327
-margin_bottom = 121.944
+margin_left = 433.446
+margin_top = 60.8465
+margin_right = 946.446
+margin_bottom = 155.847
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 1, 0.996078, 0.996078, 1 )
 text = "My Anime Girlfriend"
@@ -64,9 +64,9 @@ scale = Vector2( 0.603166, 0.582961 )
 texture = ExtResource( 2 )
 
 [node name="StartButton" type="Button" parent="."]
-margin_left = 610.0
+margin_left = 600.0
 margin_top = 210.0
-margin_right = 775.0
+margin_right = 765.0
 margin_bottom = 258.0
 custom_styles/hover = SubResource( 3 )
 custom_styles/normal = SubResource( 4 )
@@ -78,9 +78,9 @@ __meta__ = {
 }
 
 [node name="StoreUpgradeButton" type="Button" parent="."]
-margin_left = 610.0
+margin_left = 600.0
 margin_top = 260.0
-margin_right = 778.0
+margin_right = 768.0
 margin_bottom = 308.0
 custom_styles/hover = SubResource( 6 )
 custom_styles/normal = SubResource( 4 )
@@ -92,9 +92,9 @@ __meta__ = {
 }
 
 [node name="NewCharStoreButton" type="Button" parent="."]
-margin_left = 610.0
+margin_left = 600.0
 margin_top = 310.0
-margin_right = 780.0
+margin_right = 770.0
 margin_bottom = 358.0
 custom_styles/hover = SubResource( 7 )
 custom_styles/normal = SubResource( 4 )
@@ -106,9 +106,9 @@ __meta__ = {
 }
 
 [node name="DecoStoreButton" type="Button" parent="."]
-margin_left = 610.0
+margin_left = 600.0
 margin_top = 360.0
-margin_right = 775.0
+margin_right = 765.0
 margin_bottom = 408.0
 custom_styles/hover = SubResource( 8 )
 custom_styles/normal = SubResource( 4 )
