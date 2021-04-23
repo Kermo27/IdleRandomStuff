@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Zero Two 1.png-acfcef54f9e2f94cfe1ee8977e12ac80.stex"
+path="res://.import/Kyoko.png-40942d77031bbd6b3fd7813351ee939e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pictures/Zero Two 1.png"
-dest_files=[ "res://.import/Zero Two 1.png-acfcef54f9e2f94cfe1ee8977e12ac80.stex" ]
+source_file="res://Pictures/Kyoko.png"
+dest_files=[ "res://.import/Kyoko.png-40942d77031bbd6b3fd7813351ee939e.stex" ]
 
 [params]
 

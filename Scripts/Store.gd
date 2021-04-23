@@ -38,12 +38,13 @@ var plusTenLevel = 1
 var plusElevenPrice = 75000000000
 var plusElevenLevel = 1
 
-var texture = "test"
+var character = "test"
 
 func _ready():
+	LoadCharacter()
 	LoadGame()
 	UpdateUI()
-	$"ClickButton".texture_normal = load("res://Pictures/"+texture+".png")
+	$"ClickButton".texture_normal = load("res://Pictures/"+character+".png")
 
 
 func UpdateUI():
@@ -55,12 +56,6 @@ func _on_Button_pressed():
 	gold = gold + storeCount
 	UpdateUI()
 
-
-func _on_BuyButton_pressed():
-	if $StorePanel.visible == true:
-		$StorePanel.visible = false
-	else:
-		$StorePanel.visible = true
 
 func alert(text: String, title: String='Message') -> void:
 	var dialog = AcceptDialog.new()
@@ -76,7 +71,6 @@ func SaveGame():
 	save_file.open("user://savefile.save", File.WRITE)
 	save_file.store_line(str(gold))
 	save_file.store_line(str(storeCount))
-	save_file.store_line(str(texture))
 	save_file.store_line(str(plusOneLevel))
 	save_file.store_line(str(plusOnePrice))
 	save_file.store_line(str(plusTwoLevel))
@@ -109,7 +103,6 @@ func LoadGame():
 	save_file.open("user://savefile.save", File.READ)
 	gold = float(save_file.get_line())
 	storeCount = float(save_file.get_line())
-	texture = str(save_file.get_line())
 	plusOneLevel = int(save_file.get_line())
 	plusOnePrice = float(save_file.get_line())
 	plusTwoLevel = int(save_file.get_line())
@@ -132,6 +125,15 @@ func LoadGame():
 	plusTenPrice = float(save_file.get_line())
 	plusElevenLevel = int(save_file.get_line())
 	plusElevenPrice = float(save_file.get_line())
+	print("Loaded")
+	save_file.close()
+	
+func LoadCharacter():
+	var save_file = File.new()
+	if not save_file.file_exists("user://character.save"):
+		return
+	save_file.open("user://character.save", File.READ)
+	character = save_file.get_line()
 	print("Loaded")
 	save_file.close()
 

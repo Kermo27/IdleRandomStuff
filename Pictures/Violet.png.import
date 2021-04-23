@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Kirigiri.png-de7e4609f8f25e29e16cd9edc8e92de8.stex"
+path="res://.import/Violet.png-8220d7df9000816b184aa729b81d6706.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pictures/Kirigiri.png"
-dest_files=[ "res://.import/Kirigiri.png-de7e4609f8f25e29e16cd9edc8e92de8.stex" ]
+source_file="res://Pictures/Violet.png"
+dest_files=[ "res://.import/Violet.png-8220d7df9000816b184aa729b81d6706.stex" ]
 
 [params]
 

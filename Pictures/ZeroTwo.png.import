@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Violet 1.png-5b606a028e6d74873d8d9b0c2641b349.stex"
+path="res://.import/ZeroTwo.png-62578debe0d0979af972e3980675b38e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pictures/Violet 1.png"
-dest_files=[ "res://.import/Violet 1.png-5b606a028e6d74873d8d9b0c2641b349.stex" ]
+source_file="res://Pictures/ZeroTwo.png"
+dest_files=[ "res://.import/ZeroTwo.png-62578debe0d0979af972e3980675b38e.stex" ]
 
 [params]
 

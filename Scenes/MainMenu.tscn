@@ -1,10 +1,11 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://Fonts/PatrickHand-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Pictures/Emilia.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=3]
 [ext_resource path="res://Pictures/Llenn.png" type="Texture" id=4]
 [ext_resource path="res://Pictures/Taiga.png" type="Texture" id=5]
+[ext_resource path="res://Scripts/Characters.gd" type="Script" id=6]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.870588, 0.486275, 0.737255, 1 )
@@ -72,7 +73,12 @@ bg_color = Color( 0.6, 0.6, 0.6, 0 )
 size = 23
 font_data = ExtResource( 1 )
 
+[sub_resource type="InputEventAction" id=29]
+action = "Back"
+pressed = true
+
 [sub_resource type="ShortCut" id=21]
+shortcut = SubResource( 29 )
 
 [sub_resource type="StyleBoxFlat" id=22]
 bg_color = Color( 0.870588, 0.486275, 0.737255, 1 )
@@ -89,6 +95,13 @@ bg_color = Color( 0.6, 0.6, 0.6, 0 )
 [sub_resource type="DynamicFont" id=26]
 size = 30
 font_data = ExtResource( 1 )
+
+[sub_resource type="InputEventAction" id=30]
+action = "Back"
+pressed = true
+
+[sub_resource type="ShortCut" id=31]
+shortcut = SubResource( 30 )
 
 [sub_resource type="DynamicFont" id=27]
 size = 30
@@ -171,7 +184,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DecoStoreButton" type="Button" parent="."]
+[node name="TempButton" type="Button" parent="."]
+visible = false
 margin_left = 600.0
 margin_top = 360.0
 margin_right = 765.0
@@ -226,7 +240,7 @@ position = Vector2( 273.935, 300.021 )
 scale = Vector2( 0.794531, 0.756817 )
 texture = ExtResource( 4 )
 
-[node name="Button" type="Button" parent="Upgrades"]
+[node name="BackUpgradesButton" type="Button" parent="Upgrades"]
 margin_left = 922.0
 margin_top = 1.0
 margin_right = 1022.0
@@ -412,11 +426,12 @@ visible = false
 margin_right = 1024.0
 margin_bottom = 600.0
 custom_styles/panel = SubResource( 22 )
+script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="Characters"]
+[node name="SinonButton" type="Button" parent="Characters"]
 margin_left = 70.0
 margin_top = 175.0
 margin_right = 138.0
@@ -431,7 +446,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="Characters"]
+[node name="LeafaButton" type="Button" parent="Characters"]
 margin_left = 490.0
 margin_top = 175.0
 margin_right = 558.0
@@ -446,7 +461,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="Characters"]
+[node name="AliceButton" type="Button" parent="Characters"]
 margin_left = 350.0
 margin_top = 175.0
 margin_right = 418.0
@@ -461,7 +476,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button4" type="Button" parent="Characters"]
+[node name="AsunaButton" type="Button" parent="Characters"]
 margin_left = 210.0
 margin_top = 175.0
 margin_right = 278.0
@@ -476,7 +491,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button5" type="Button" parent="Characters"]
+[node name="SayakaButton" type="Button" parent="Characters"]
 margin_left = 490.0
 margin_top = 325.0
 margin_right = 558.0
@@ -491,7 +506,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button6" type="Button" parent="Characters"]
+[node name="SoniaButton" type="Button" parent="Characters"]
 margin_left = 350.0
 margin_top = 325.0
 margin_right = 418.0
@@ -506,7 +521,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button7" type="Button" parent="Characters"]
+[node name="KyokoButton" type="Button" parent="Characters"]
 margin_left = 210.0
 margin_top = 325.0
 margin_right = 281.0
@@ -521,7 +536,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button8" type="Button" parent="Characters"]
+[node name="ChiakiButton" type="Button" parent="Characters"]
 margin_left = 70.0
 margin_top = 325.0
 margin_right = 138.0
@@ -536,7 +551,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button9" type="Button" parent="Characters"]
+[node name="ChikaButton" type="Button" parent="Characters"]
 margin_left = 490.0
 margin_top = 474.0
 margin_right = 558.0
@@ -551,7 +566,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button10" type="Button" parent="Characters"]
+[node name="ZeroTwoButton" type="Button" parent="Characters"]
 margin_left = 340.0
 margin_top = 474.0
 margin_right = 438.0
@@ -566,7 +581,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button11" type="Button" parent="Characters"]
+[node name="CCButton" type="Button" parent="Characters"]
 margin_left = 210.0
 margin_top = 475.0
 margin_right = 278.0
@@ -581,7 +596,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button12" type="Button" parent="Characters"]
+[node name="VioletButton" type="Button" parent="Characters"]
 margin_left = 70.0
 margin_top = 475.0
 margin_right = 138.0
@@ -596,7 +611,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button13" type="Button" parent="Characters"]
+[node name="BackCharactersButton" type="Button" parent="Characters"]
 margin_left = 955.0
 margin_top = 1.0
 margin_right = 1023.0
@@ -606,6 +621,7 @@ custom_styles/pressed = SubResource( 24 )
 custom_styles/normal = SubResource( 25 )
 custom_fonts/font = SubResource( 26 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
+shortcut = SubResource( 31 )
 text = "Wróć"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -616,7 +632,7 @@ position = Vector2( 846.5, 307.332 )
 scale = Vector2( 1.07333, 1.05 )
 texture = ExtResource( 5 )
 
-[node name="Label" type="Label" parent="Characters"]
+[node name="SwordArtOnline" type="Label" parent="Characters"]
 margin_left = 15.0
 margin_top = 100.0
 margin_right = 215.0
@@ -628,7 +644,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label2" type="Label" parent="Characters"]
+[node name="OtherSeries" type="Label" parent="Characters"]
 margin_left = 15.0
 margin_top = 400.0
 margin_right = 207.0
@@ -637,7 +653,7 @@ custom_fonts/font = SubResource( 27 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Inne serie anime:"
 
-[node name="Label3" type="Label" parent="Characters"]
+[node name="Danganronpa" type="Label" parent="Characters"]
 margin_left = 15.0
 margin_top = 250.0
 margin_right = 168.0
@@ -646,7 +662,7 @@ custom_fonts/font = SubResource( 27 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Danganronpa:"
 
-[node name="Label4" type="Label" parent="Characters"]
+[node name="AvailableChar" type="Label" parent="Characters"]
 margin_left = 15.0
 margin_right = 415.0
 margin_bottom = 69.0
@@ -657,4 +673,20 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 [connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="StoreUpgradeButton" to="." method="_on_StoreUpgradeButton_pressed"]
+[connection signal="pressed" from="NewCharStoreButton" to="." method="_on_NewCharStoreButton_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="Upgrades/BackUpgradesButton" to="." method="_on_BackUpgradesButton_pressed"]
+[connection signal="pressed" from="Characters/SinonButton" to="Characters" method="_on_SinonButton_pressed"]
+[connection signal="pressed" from="Characters/LeafaButton" to="Characters" method="_on_LeafaButton_pressed"]
+[connection signal="pressed" from="Characters/AliceButton" to="Characters" method="_on_AliceButton_pressed"]
+[connection signal="pressed" from="Characters/AsunaButton" to="Characters" method="_on_AsunaButton_pressed"]
+[connection signal="pressed" from="Characters/SayakaButton" to="Characters" method="_on_SayakaButton_pressed"]
+[connection signal="pressed" from="Characters/SoniaButton" to="Characters" method="_on_SoniaButton_pressed"]
+[connection signal="pressed" from="Characters/KyokoButton" to="Characters" method="_on_KyokoButton_pressed"]
+[connection signal="pressed" from="Characters/ChiakiButton" to="Characters" method="_on_ChiakiButton_pressed"]
+[connection signal="pressed" from="Characters/ChikaButton" to="Characters" method="_on_ChikaButton_pressed"]
+[connection signal="pressed" from="Characters/ZeroTwoButton" to="Characters" method="_on_ZeroTwoButton_pressed"]
+[connection signal="pressed" from="Characters/CCButton" to="Characters" method="_on_CCButton_pressed"]
+[connection signal="pressed" from="Characters/VioletButton" to="Characters" method="_on_VioletButton_pressed"]
+[connection signal="pressed" from="Characters/BackCharactersButton" to="." method="_on_BackCharactersButton_pressed"]
